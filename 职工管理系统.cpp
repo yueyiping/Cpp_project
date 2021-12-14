@@ -31,7 +31,7 @@ int main()
 		while (cin.fail())
 		{
 			cout << "ÇëÖØĞÂÊäÈëĞòºÅ£º" << endl;
-			cin.clear();
+			cin.clear(); 
 			//cin.sync();
 			cin.ignore();
 			while (cin.get())
@@ -46,18 +46,25 @@ int main()
 			wm.exit_System();
 			break;
 		case 1:
+			wm.Add_Emp();
 			break;
 		case 2:
+			wm.Show_Emp();
 			break;
 		case 3:
+			wm.Del_Emp();
 			break;
 		case 4:
+			wm.Mod_Emp();
 			break;
 		case 5:
+			wm.Find_Emp();
 			break;
 		case 6:
+			wm.Sort_Emp();
 			break;
 		case 7:
+			wm.clean_File();
 			break;
 		default:
 			system("cls");
@@ -65,6 +72,6 @@ int main()
 		}
 	}
 
-	//system("pause");
+	system("pause");
 	return 0;
 }
